@@ -301,6 +301,12 @@ svg:hover path {
         display: none;
     }
 }
+@media (max-width: 720px){
+    .modal__widow-inner {
+        width: 353px;
+       
+    }
+}
 
 @media (max-width: 620px) {
     .header__content {
@@ -319,6 +325,9 @@ svg:hover path {
     }
     svg path {
         fill: #0047bb;
+    }
+    .modal__widow-inner {
+        width: 300px; 
     }
 }
 
@@ -354,4 +363,17 @@ svg:hover path {
     .footer {
         background-color: #edf7fa;
     }
+
+    .modal__widow-title {
+        font-size: 15px;
+    }
+
+    .modal__widow-inner {
+        width: 250px; 
+    }
+    .modal__widow-close {
+        height: 45px;
+        width: 47px;
+    }
+
 }
