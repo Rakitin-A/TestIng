@@ -43,13 +43,13 @@
                         <h4 class="title modal__title">73 года c Вами!</h4>
                         <p class="subtitle">С теми, кто дорожит своими достижениями</p>
                     </div>
-                    <form class="modal__links"  method="POST">
+                    <form class="modal__links"  method="POST" id="form">
                         <input class="modal__input" type="text" placeholder="Ф.И.О" required>
                         <input class="modal__input" type="tel" placeholder="+ 7" required>
                         <input class="modal__input" type="email" placeholder="Email" required>
                         <button class="modal__button" type="submit" data-modal="window">Забронировать</button>
                         <label class="modal__checkbox">
-                            <input class="custom-checkbox" type="checkbox">
+                            <input class="custom-checkbox" type="checkbox" required>
                             <p> Подтверждаю согласие на обработку персональных данных и получение информации​ о других
                                 продуктах
                                 и услугах СПАО «Ингосстрах» и его партнеров.</p>
@@ -62,10 +62,10 @@
     </section>
 
     <!-- Modal -->
-    <div class="modal__widow" id="widow">
-        <div class="modal__widow-inner">
-            <h4 class="modal__widow-title">Спасибо, ваша заявка принята</h4>
-            <button class="modal__widow-close" type="button">
+    <div class="modal__window" id="window">
+        <div class="modal__window-inner">
+            <h4 class="modal__window-title">Спасибо, ваша заявка принята</h4>
+            <button class="modal__window-close" type="button">
                 <img src="images/close.svg" alt="">
             </button>
         </div>
