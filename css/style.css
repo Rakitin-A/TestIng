@@ -299,7 +299,7 @@ svg:hover path {
     }
 }
 @media (max-width: 720px){
-    .modal__widow-inner {
+    .modal__window-inner {
         width: 353px;
        
     }
@@ -323,7 +323,7 @@ svg:hover path {
     svg path {
         fill: #0047bb;
     }
-    .modal__widow-inner {
+    .modal__window-inner {
         width: 300px; 
     }
 }
@@ -361,14 +361,14 @@ svg:hover path {
         background-color: #edf7fa;
     }
 
-    .modal__widow-title {
+    .modal__window-title {
         font-size: 15px;
     }
 
-    .modal__widow-inner {
+    .modal__window-inner {
         width: 250px; 
     }
-    .modal__widow-close {
+    .modal__window-close {
         height: 45px;
         width: 47px;
     }
