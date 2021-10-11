@@ -252,7 +252,7 @@ body {
     width: 13px;
     height: 8px;
     background-image: url("../images/arrow.svg");
-    top: 7px;
+    top: 6px;
     right: -35px;
 }
 .info__left:hover  .info__to-book::after {
