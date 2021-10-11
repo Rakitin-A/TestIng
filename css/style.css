@@ -204,7 +204,8 @@ body {
 }
 .info__left:hover a {
     color: #0047bb;
-}.info__right:hover a {
+}
+.info__right:hover a {
     color: #0047bb;
 }
 .info__left {
@@ -252,13 +253,13 @@ body {
     width: 13px;
     height: 8px;
     background-image: url("../images/arrow.svg");
-    top: 6px;
+    top: 7px;
     right: -35px;
 }
-.info__left:hover  .info__to-book::after {
+.info__left:hover .info__to-book::after {
     background-image: url("../images/arrow-accent.svg");
 }
-.info__right:hover  .info__to-book::after {
+.info__right:hover .info__to-book::after {
     background-image: url("../images/arrow-accent.svg");
 }
 .info__link {
@@ -278,7 +279,6 @@ body {
 .footer__social-list {
     margin: 0 11px;
 }
-
 
 @media (max-width: 1120px) {
     .info__inner {
@@ -320,6 +320,12 @@ body {
     .modal__window-inner {
         width: 353px;
     }
+    .info__to-book {
+        color: #0047bb;
+    }
+    .info__to-book::after {
+        background-image: url("../images/arrow-accent.svg");
+    }
 }
 
 @media (max-width: 620px) {
@@ -332,13 +338,6 @@ body {
     }
     .info__inner {
         padding: 0;
-    }
-
-    .info__to-book {
-        color: #0047bb;
-    }
-    svg path {
-        fill: #0047bb;
     }
     .modal__window-inner {
         width: 300px;
