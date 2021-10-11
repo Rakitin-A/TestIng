@@ -112,9 +112,9 @@ body {
     font-size: 16px;
     line-height: 24px;
     cursor: pointer;
-    transition: all .3s ;
+    transition: all 0.3s;
 }
-.modal__button:hover{
+.modal__button:hover {
     color: #0047bb;
 }
 .modal__checkbox {
@@ -155,7 +155,6 @@ body {
     position: relative;
 }
 
-
 .modal__window-title {
     font-size: 24px;
     font-weight: 900;
@@ -165,16 +164,16 @@ body {
 
 .modal__window-close {
     position: absolute;
-    top:  -20px;
+    top: -20px;
     right: -30px;
     z-index: 1;
     background: none;
     border: none;
     cursor: pointer;
 
-    transition: transform .2s linear;
+    transition: transform 0.2s linear;
 }
-.modal__window-close:hover{
+.modal__window-close:hover {
     transform: rotate(90deg);
 }
 .modal__window-close img {
@@ -203,7 +202,11 @@ body {
     width: 100%;
     padding: 30px 15px 60px;
 }
-
+.info__left:hover a {
+    color: #0047bb;
+}.info__right:hover a {
+    color: #0047bb;
+}
 .info__left {
     margin-right: 35px;
 }
@@ -231,6 +234,9 @@ body {
     background-repeat: no-repeat;
     background-position: right 80%;
 }
+.info__link {
+    display: inline;
+}
 .info__to-book {
     font-size: 16px;
     line-height: 22px;
@@ -238,20 +244,27 @@ body {
     position: relative;
     transition: all 0.3s;
     width: 100%;
+    position: relative;
+}
+.info__to-book::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    background-image: url("../images/arrow.svg");
+    top: 7px;
+    right: -35px;
+}
+.info__left:hover  .info__to-book::after {
+    background-image: url("../images/arrow-accent.svg");
+}
+.info__right:hover  .info__to-book::after {
+    background-image: url("../images/arrow-accent.svg");
 }
 .info__link {
     display: inline;
     margin-right: 15px;
 }
-.info__to-book:hover {
-    color: #0047bb;
-    transition: all 0.3s;
-    padding: 0 20px 0 0;
-}
-svg:hover path {
-    fill: #0047bb;
-}
-
 .footer__inner {
     padding: 30px 15px 35px;
     text-align: center;
@@ -262,10 +275,10 @@ svg:hover path {
     justify-content: center;
     align-items: center;
 }
-
 .footer__social-list {
     margin: 0 11px;
 }
+
 
 @media (max-width: 1120px) {
     .info__inner {
@@ -303,10 +316,9 @@ svg:hover path {
         display: none;
     }
 }
-@media (max-width: 720px){
+@media (max-width: 720px) {
     .modal__window-inner {
         width: 353px;
-       
     }
 }
 
@@ -329,7 +341,7 @@ svg:hover path {
         fill: #0047bb;
     }
     .modal__window-inner {
-        width: 300px; 
+        width: 300px;
     }
 }
 
@@ -371,11 +383,10 @@ svg:hover path {
     }
 
     .modal__window-inner {
-        width: 250px; 
+        width: 250px;
     }
     .modal__window-close {
         height: 45px;
         width: 47px;
     }
-
 }
